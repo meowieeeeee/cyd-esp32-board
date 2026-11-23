@@ -1,0 +1,7 @@
+# ESP32 CYD - flash 4 MB
+# Single app (no OTA) + NVS for settings (wifi, token, ...). No filesystem.
+# Keep the nvs offset/size unchanged in future edits so saved data is not lost.
+# NOTE: keep this file ASCII-only - PlatformIO on Windows reads it as cp1252.
+# Name,   Type, SubType,  Offset,   Size,      Flags
+nvs,      data, nvs,      0x9000,   0x5000,
+app0,     app,  factory,  0x10000,  0x3F0000,
